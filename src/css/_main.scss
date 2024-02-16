@@ -1,0 +1,209 @@
+@use './extend';
+@use './variables';
+
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: grid;
+    grid:
+      "header" auto
+      "main" 1fr
+      "footer" auto
+      / 1fr;
+  }
+
+.container {
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-right: auto;
+     margin-left: auto;
+     @media screen and (min-width: 375px) {
+        width: 375px;
+     }
+     @media screen and (min-width: 769px) {
+        width: 689px;
+        padding-left: 39px;
+        padding-right: 39px;
+     }
+     @media screen and (min-width: 1440px) {
+        width: 1110px;
+        padding-left: 165px;
+        padding-right: 165px;
+     }
+ }
+  
+.hero__wrapper{
+   position: relative;
+   &::before{
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top:0;
+      left:0;
+      background: variables.$hero-gradient;
+      opacity: 20%;
+      overflow: hidden;
+      z-index: -1;
+   }
+   &::after{
+      @media screen and (min-width: 1440px) {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 687.25px;
+      height: 579.31px;
+      top:133px;
+      left: 704.38px;
+      background-image: url('/hero-bg.png');
+      z-index: 0;
+      }
+      
+   }
+}
+
+.header { 
+  grid-area: "header";
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 52px;
+  padding-top: 40px; 
+
+  .button__burger{
+   cursor: pointer;
+      .icon-burger {
+         width: 32px;
+         height: 32px;
+         display: block;
+         fill: variables.$blue-color;
+      }
+   } 
+}
+.main { grid-area: "main" }
+.footer { grid-area: "footer"}
+
+
+.hero{
+   padding-bottom: 69px;
+   @media screen and (min-width: 769px) {
+      padding-bottom: 184px;
+   }
+   @media screen and (min-width: 1440px) {
+      padding-bottom: 195px;
+   }
+   .title{
+         width: 238px;
+         height: 235px;
+         font-weight: 800;
+         font-size: 48px;
+         line-height: 62.4px;
+         letter-spacing: 2%;
+         text-transform: uppercase;
+      
+         color: variables.$accent-color;
+         margin-bottom: 55px;
+         @media screen and (min-width: 769px) {
+            width:525px;
+            height: 166px;
+            font-size: 64px;
+            line-height: 83.2px;
+            letter-spacing: 4%;
+
+            margin-bottom: 56px;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 545px;
+            height: 147px;
+            margin-bottom: 64px;
+         }
+   }
+   .text{
+       @extend %text;
+         width: 345px;
+         height: 119px;
+         margin-bottom: 94px;  
+         span{
+            display: block;
+         }
+         @media screen and (min-width: 769px) {
+               width: 425px;
+               height: 82px;
+               font-size: 18px;
+               line-height: 28.8px;
+               margin-bottom: 72px;
+               span{
+                  display: inline-block;
+               }
+            }
+   }
+   .button {
+      @extend %button;
+      width: 220px;
+      height: 56px;
+   }
+}
+
+.benefit{
+   padding-top: 77px;
+   @media screen and (min-width: 769px) {
+      padding-top: 106px;
+   }
+   @media screen and (min-width: 1440px) {
+      padding-top: 176px;
+   }
+   .sectionTitle{
+       @extend %sectionTitle;
+       width: 346px;
+       margin-bottom: 76px;
+       @media screen and (min-width: 769px) {
+         width: 457px;
+      }
+   }
+}
+
+
+.invitation {
+   background-color: variables.$title-blue-color;
+   padding-top: 91px;
+   padding-bottom: 52px;
+   border-top-right-radius: 200px;
+
+   .sectionTitle {
+      @extend %sectionTitle;
+      color: variables.$white-color;
+      width: 279px;
+      line-height:43.2px;
+      letter-spacing: 1.8px;
+
+      margin-bottom: 38px;
+      @media screen and (min-width: 769px) {
+         width: 306px;
+         font-size: 36px;
+      }
+   }
+   .text {
+      width: 346px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 38.4px;
+      letter-spacing: 1.44px;
+      color: variables.$white-color;
+      opacity: 60%;
+
+      margin-bottom: 50px;
+      text-wrap: balance;
+   }
+   .button{
+      @extend %button;
+      width: 220px;
+      height: 56px;
+      font-size: 24px;
+      line-height: 26px;
+   }
+}
+
+
