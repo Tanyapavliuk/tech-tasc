@@ -34,4 +34,15 @@
     src: url('./src/assets/fonts/SF-Pro-Display-Heavy.woff') format("woff");
     font-weight: 800;
 }
+@font-face {
+    font-family: 'TT Travels';
+    src: url('./src/assets/fonts/TTTravels-BoldItalic.woff') format("woff");
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'TT Travels';
+    src: url('./src/assets/fonts/TTTravels-Regular.woff') format("woff");
+    font-weight: 400;
+}
 

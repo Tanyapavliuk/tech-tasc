@@ -11,7 +11,7 @@
     <div class="layout">
       <div class="hero__wrapper">
         <header class="header container">
-          <a href="/">
+          <a href="/" class="header__logo">
             <svg width="48px" height="48px">
               <use href="./src/assets/images/sprite.svg#icon-logo"></use>
             </svg>
@@ -43,90 +43,190 @@
               <h2 class="sectionTitle">
                 What we do to help our client grow in digital era?
               </h2>
-              <ul class="card_list">
-                <li class="card">
-                  <img
-                    class="card_img technology"
-                    src="./src/assets/images/bringTechnology.png"
+              <div class="card technology">
+                <img
+                  class="card_img technology"
+                  src="./src/assets/images/bringTechnology.png"
+                />
+                <h3 class="card_title technology">Bring Technology To Your</h3>
+                <p class="card_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="card_button">
+                  <p>Learn more</p>
+                  <svg class="icon" width="24px" height="24px">
+                    <use href="./src/assets/images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card famous">
+                <img
+                  class="card_img famous"
+                  src="./src/assets/images/famous.png"
+                />
+                <h3 class="card_title famous">
+                  Make Your business To Be Better Famous
+                </h3>
+                <p class="card_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="card_button">
+                  <p>Learn more</p>
+                  <svg class="icon" width="24px" height="24px">
+                    <use href="./src/assets/images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="card suitable">
+                <img
+                  class="card_img suitable"
+                  src="./src/assets/images/suitable.png"
+                />
+                <h3 class="card_title suitable">
+                  Build Your Digital Product That Suitable
+                </h3>
+                <p class="card_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="card_button">
+                  <p>Learn more</p>
+                  <svg class="icon" width="24px" height="24px">
+                    <use href="./src/assets/images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="registration container">
+            <div class="registration__wrapper">
+              <h2>registration</h2>
+              <form class="registration__form">
+                <div class="form__input-group">
+                <label class="form-label">
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input"
+                    placeholder="Your name"
                   />
-                  <h3 class="card_title technology">
-                    Bring Technology To Your
-                  </h3>
-                  <p class="card_info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <button class="card_button">
-                    <p>Learn more</p>
-                    <svg class="icon" width="24px" height="24px">
-                      <use
-                        href="./src/assets/images/sprite.svg#icon-arrow"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li class="card">
-                  <img
-                    class="card_img famous"
-                    src="./src/assets/images/famous.png"
+                </label>
+                <label class="form-label">
+                  Surname
+                  <input
+                    type="text"
+                    name="surname"
+                    class="form-input"
+                    placeholder="Your surname"
                   />
-                  <h3 class="card_title famous">
-                    Make Your business To Be Better Famous
-                  </h3>
-                  <p class="card_info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                </label>
+                <div>
+                  <label class="form-label">
+                    Phone number
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-input"
+                      placeholder="+38 ___ ___ __ __"
+                    />
+                  </label>
+                  <p class="input-alert">*Use only numbers</p>
+                </div>
+                <div>
+                  <label class="form-label">
+                    Email
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-input"
+                      placeholder="email@email.com"
+                      pattern="^[a-zA-Z.\-@_]+$"
+                    />
+                  </label>
+                  <p class="input-alert">
+                    *Use only latin letters and characters ._-@
                   </p>
-                  <button class="card_button">
-                    <p>Learn more</p>
-                    <svg class="icon" width="24px" height="24px">
-                      <use
-                        href="./src/assets/images/sprite.svg#icon-arrow"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li class="card">
-                  <img
-                    class="card_img suitable"
-                    src="./src/assets/images/suitable.png"
-                  />
-                  <h3 class="card_title suitable">
-                    Build Your Digital Product That Suitable
-                  </h3>
-                  <p class="card_info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                </div>
+              </div>
+                <label class="consent-checkbox">
+                  <input type="checkbox" name="" class="checkbox" />
+                  <span class="chec-icon"></span>
+                  <p class="text">
+                    I agree with The Terms of Use and with The Privacy Policy
                   </p>
-                  <button class="card_button">
-                    <p>Learn more</p>
-                    <svg class="icon" width="24px" height="24px">
-                      <use
-                        href="./src/assets/images/sprite.svg#icon-arrow"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
+                </label>
+                <button class="button">Register me!</button>
+              </form>
             </div>
           </section>
         </div>
         <section class="invitation">
-          <div class="container">
-            <h2 class="sectionTitle">Intersted to work with our team?</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
+          <div class="container invitation__wrapper">
+            <div>
+              <h2 class="sectionTitle">Intersted to work with our team?</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
             <button class="button">Let’s Talk</button>
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__contact">
+              <a href="/" class="footer__logo">
+                <svg class="icon" width="48px" height="48px">
+                  <use
+                    href="./src/assets/images/sprite.svg#icon-logo-footer"
+                  ></use>
+                </svg>
+              </a>
+              <ul class="contact-list">
+                <li class="contact-list__item">
+                  <p>A.</p>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </li>
+                <li class="contact-list__item">
+                  <p>T.</p>
+                  <a href="tel:+380912345678">+38 091 234 56 78</a>
+                </li>
+                <li class="contact-list__item">
+                  <p>E</p>
+                  <a href="mailto:hello.ira@gmail.com">hello.ira@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__about">
+              <h3>About US</h3>
+              <ul class="about-list">
+                <li class="link"><a href="#">About</a></li>
+                <li class="link"><a href="#">What We Do</a></li>
+                <li class="link"><a href="#">Project</a></li>
+                <li class="link"><a href="#">How It Work With Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__follow">
+              <h3>Follow</h3>
+              <ul class="follow-list">
+                <li class="link"><a href="#">Instagram</a></li>
+                <li class="link"><a href="#">Facebook</a></li>
+                <li class="link"><a href="#">LinkedIn</a></li>
+                <li class="link"><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copy">2019 © All rights reserved.</p>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="/main.js"></script>
