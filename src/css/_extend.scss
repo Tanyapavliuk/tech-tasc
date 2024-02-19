@@ -1,48 +1,46 @@
 @use './variables';
 
 %text {
-    font-size: 18px;
-    line-height: 28.8px;
-    letter-spacing: 0.72px;
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 0.72px;
 
-    color: variables.$accent-color;
-    opacity: 60%;
+  color: variables.$accent-color;
+  opacity: 60%;
 }
 
 %button {
-   border-radius: 10px;
-   background-color: variables.$default-blue-color;
-   opacity: 80%;
-   overflow: hidden;
-   box-shadow: variables.$shadow-default;
+  border-radius: 10px;
+  background-color: variables.$default-blue-color;
+  opacity: 80%;
+  overflow: hidden;
+  box-shadow: variables.$shadow-default;
 
-   font-weight: 500;
-   font-size: 18px;
-   line-height: 26px;
-   letter-spacing: 1.44px;
-   color: variables.$white-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1.44px;
+  color: variables.$white-color;
 
-   cursor: pointer;
-   &:hover{
-      background-color: variables.$hover-blue-color;
-      box-shadow: variables.$shadow-hover;  
-   }
-   &:active{
-      background-color: variables.$active-blue-color;
-   }
+  cursor: pointer;
+  &:hover {
+    background-color: variables.$hover-blue-color;
+    box-shadow: variables.$shadow-hover;
+  }
+  &:active {
+    background-color: variables.$active-blue-color;
+  }
 }
 
 %sectionTitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 50.4px;
-    letter-spacing: 1.8px;
-    color: variables.$title-blue-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50.4px;
+  letter-spacing: 1.8px;
+  color: variables.$title-blue-color;
 
-    @media screen and (min-width: 769px) {
-        font-size: 48px;
-        line-height: 67.2px;
-     }
+  @media screen and (min-width: 769px) {
+    font-size: 48px;
+    line-height: 67.2px;
+  }
 }
-
-

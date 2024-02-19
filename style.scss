@@ -1,18 +1,17 @@
-@use './src/css/reset.scss';
-@use './src/css/custom-fonts';
-@use './src/css/main';
+@use "./src/css/reset.scss";
+@use "./src/css/custom-fonts";
+@use "./src/css/main";
 
 $primary-color: #FFFFFF;
 
-
 html, 
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
     background-color: $primary-color;
-    height: 100%;
-    font-family: 'SF Pro Display';
+    min-height: 100vh;
+    font-family: "SF Pro Display";
     font-weight: 400;
 }
