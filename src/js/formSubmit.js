@@ -4,7 +4,6 @@ const BntSubmit = document.querySelector('#submit');
 BntSubmit.addEventListener('click', handelSubmitForm);
 const inputs = document.querySelectorAll('.form-input')
 const checkbox = document.querySelector('#checkbox')
-const inputAlerts = document.querySelectorAll('.input-alert')
 
 function handelSubmitForm(event) {
     event.preventDefault();
@@ -27,7 +26,6 @@ function handelSubmitForm(event) {
         }
         if(!isNotFill) {
             Array.from(inputs).forEach(el=>el.classList.remove('error'))
-            Array.from(inputAlerts).forEach(el=>el.classList.remove('error'))
             const form = document.querySelector('#form');
             new Toast("Thank you for your registration!", Toast.TYPE_DONE, Toast.TIME_NORMAL);
             form.reset()
