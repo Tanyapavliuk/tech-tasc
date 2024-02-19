@@ -1,6 +1,7 @@
 const telInput = document.querySelector('#telInput');
 telInput.addEventListener('input', validatePhoneNumber);
 
+
 function validatePhoneNumber(event) {
     const inputString = event.target.value;
     var pattern = /^\+380\d{9}$/;

@@ -1,6 +1,7 @@
 @use "./src/css/reset.scss";
 @use "./src/css/custom-fonts";
 @use "./src/css/main";
+@import "toaster-js/default.scss";
 
 $primary-color: #ffffff;
 

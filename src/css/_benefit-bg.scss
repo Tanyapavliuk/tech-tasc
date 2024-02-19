@@ -1,7 +1,7 @@
 body {
-  background-image: url("/public/Ellipses/mob-1.png"),
-    url("/public/Ellipses/mob-2.png"), url("/public/Ellipses/mob-3.png"),
-    url("/public/Ellipses/mob-4.png");
+  background-image: url("/Ellipses/mob-1.png"),
+    url("/Ellipses/mob-2.png"), url("/Ellipses/mob-3.png"),
+    url("/Ellipses/mob-4.png");
   background-position: top 1715.15px left 0px, top 2377px left 0px,
     top 1031px left 0px, top 3311px left 0px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
@@ -10,9 +10,9 @@ body {
     670.7px 568.19px;
 
   @media screen and (min-width: 768px) {
-    background-image: url("/public/Ellipses/tabl-1.png"),
-      url("/public/Ellipses/tabl-2.png"), url("/public/Ellipses/tabl-3.png"),
-      url("/public/Ellipses/tabl-4.png");
+    background-image: url("/Ellipses/tabl-1.png"),
+      url("/Ellipses/tabl-2.png"), url("/Ellipses/tabl-3.png"),
+      url("/Ellipses/tabl-4.png");
     background-position: top 1985px left -160px, top 2708px right 0px,
       top 1085px right 0px, top 3371px left -246px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
