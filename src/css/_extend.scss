@@ -21,6 +21,7 @@
   line-height: 26px;
   letter-spacing: 1.44px;
   color: variables.$white-color;
+  transition: background-color 0.3s, box-shadow 0.3s;
 
   cursor: pointer;
   &:hover {

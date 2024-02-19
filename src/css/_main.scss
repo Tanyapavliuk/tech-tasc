@@ -85,6 +85,10 @@ html {
 
   .button__burger {
     cursor: pointer;
+    transition: transform 0.3s;
+    &:hover{
+      transform: scale(1.1);
+    }
     .icon-burger {
       width: 32px;
       height: 32px;
@@ -124,7 +128,7 @@ html {
       height: 166px;
       font-size: 64px;
       line-height: 83.2px;
-      letter-spacing: 2.56px;
+      letter-spacing: 2px;
 
       margin-bottom: 56px;
     }
@@ -273,6 +277,7 @@ html {
       align-items: center;
 
       color: variables.$default-blue-color;
+      cursor: pointer;
       &:hover svg {
         transform: translateX(6px) scale(1.2);
       }
@@ -384,6 +389,7 @@ html {
       color: #333333;
 
       border-radius: 6px;
+      transition: box-shadow 0.5s;
       &::placeholder {
         color: #5a768c;
         font-weight: 300;
@@ -422,6 +428,7 @@ html {
       align-items: start;
 
       margin-bottom: 44px;
+      cursor: pointer;
       @media screen and (min-width: 768px) {
         gap: 11.98px;
         margin-bottom: 46px;
@@ -471,6 +478,12 @@ html {
       width: 100%;
       padding-top: 13.5px;
       padding-bottom: 13.5px;
+
+      font-style: italic;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28.64px;
+      letter-spacing: 1.44px;
     }
   }
 }
@@ -538,6 +551,7 @@ html {
     height: 56px;
     font-size: 24px;
     line-height: 26px;
+    letter-spacing: 1.92px;
   }
 }
 
