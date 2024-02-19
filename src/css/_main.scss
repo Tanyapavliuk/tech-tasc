@@ -1,6 +1,6 @@
-@use './extend';
-@use './variables';
-@use './benefit-bg';
+@use "./extend";
+@use "./variables";
+@use "./benefit-bg";
 
 @mixin text {
   @extend %text;
@@ -23,9 +23,9 @@ html {
 
   display: grid;
   grid:
-    'header' auto
-    'main' 1fr
-    'footer' auto
+    "header" auto
+    "main" 1fr
+    "footer" auto
     / 1fr;
 }
 
@@ -49,7 +49,7 @@ html {
 .hero__wrapper {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
@@ -63,20 +63,20 @@ html {
   }
   &::after {
     @media screen and (min-width: 1440px) {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       width: 687.25px;
       height: 579.31px;
       top: 133px;
       left: 704.38px;
-      background-image: url('/hero-bg.png');
+      background-image: url("/hero-bg.png");
     }
   }
 }
 
 .header {
-  grid-area: 'header';
+  grid-area: "header";
   display: flex;
   justify-content: space-between;
 
@@ -94,10 +94,10 @@ html {
   }
 }
 .main {
-  grid-area: 'main';
+  grid-area: "main";
 }
 .footer {
-  grid-area: 'footer';
+  grid-area: "footer";
 }
 
 .hero {
@@ -445,7 +445,7 @@ html {
         background-color: variables.$checkbox-color;
       }
       .checkbox:checked + .chec-icon {
-        background-image: url('/Union.svg');
+        background-image: url("/Union.svg");
         background-color: variables.$accent-color;
         background-repeat: no-repeat;
         background-size: 20px 16px;
@@ -593,7 +593,7 @@ footer {
       & :first-child {
         width: 19px;
         font-weight: 800;
-        font-family: 'TT Travels';
+        font-family: "TT Travels";
         font-style: italic;
         font-size: 16px;
         line-height: 26px;
@@ -613,7 +613,7 @@ footer {
         position: relative;
       }
       & > a::before {
-        content: '';
+        content: "";
         width: 0;
         height: 1px;
         border-radius: 2px;
@@ -656,7 +656,7 @@ footer {
       letter-spacing: 0.8px;
       position: relative;
       & a::before {
-        content: '';
+        content: "";
         width: 0;
         height: 1px;
         border-radius: 2px;
@@ -675,7 +675,7 @@ footer {
   }
   .copy {
     color: variables.$white-color;
-    font-family: 'TT Travels';
+    font-family: "TT Travels";
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;

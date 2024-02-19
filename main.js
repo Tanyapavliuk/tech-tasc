@@ -1,5 +1,5 @@
 import "./style.scss"
-import "./src/js/checkEmail"
-import "./src/js/checkTel"
-import "./src/js/formSubmit"
+import "./src/js/checkEmail.js"
+import "./src/js/checkTel.js"
+import "./src/js/formSubmit.js"
 

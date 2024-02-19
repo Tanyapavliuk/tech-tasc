@@ -2,16 +2,16 @@
 @use "./src/css/custom-fonts";
 @use "./src/css/main";
 
-$primary-color: #FFFFFF;
+$primary-color: #ffffff;
 
-html, 
+html,
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-    background-color: $primary-color;
-    min-height: 100vh;
-    font-family: "SF Pro Display";
-    font-weight: 400;
+  background-color: $primary-color;
+  min-height: 100vh;
+  font-family: "SF Pro Display";
+  font-weight: 400;
 }
